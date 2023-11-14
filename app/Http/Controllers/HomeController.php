@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -46,9 +47,9 @@ class HomeController extends Controller
         return view('mitigasi');
     }
 
-    public function floraDanFauna()
+    public function floraFauna()
     {
-        return view('floraDanFauna');
+        return view('floraFauna');
     }
 
     public function celepuk()
@@ -84,5 +85,54 @@ class HomeController extends Controller
     public function tesek()
     {
         return view('tesek');
+    }
+
+    public function updateKonservasiStatus()
+    {
+        // Get the authenticated user
+        $user = Auth::user();
+
+        // Update the 'konservasi' column to 1
+        $user->update(['konservasi' => 1]);
+
+        return view('konservasi'); // Load the "konservasi" view
+    }
+
+    public function updateFloradanFaunaStatus()
+    {
+        // Get the authenticated user
+        $user = Auth::user();
+
+        // Update the 'konservasi' column to 1
+        $user->update(['flora_dan_fauna' => 1]);
+
+        return view('floraFauna'); // Load the "konservasi" view
+    }
+
+    public function updateMitigasiStatus()
+    {
+        // Get the authenticated user
+        $user = Auth::user();
+
+        // Update the 'konservasi' column to 1
+        $user->update(['mitigasi' => 1]);
+
+        return view('mitigasi'); // Load the "konservasi" view
+    }
+
+    public function updateSejarahStatus()
+    {
+        // Get the authenticated user
+        $user = Auth::user();
+
+        // Update the 'konservasi' column to 1
+        $user->update(['sejarah' => 1]);
+
+        return view('sejarah'); // Load the "konservasi" view
+    }
+
+    public function klaimHadiah()
+    {
+        return view('hadiah');
     }
 }

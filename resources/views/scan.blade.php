@@ -30,29 +30,46 @@
             </div>
             <div id="result"></div>
             <div class="stamp-progress d-flex justify-content-evenly align-items-center">
+
                 <div class="text-center row d-flex justify-content-center align-items-center">
                     <div class="stamp-container d-flex justify-content-center align-items-center">
+                        @if (Auth::user()->konservasi == 1)
                         <img src="{{ url('/frontend/images/Konservasi.svg') }}" alt="">
+                        @endif
                     </div>
+                    @if (Auth::user()->konservasi == 1)
                     <div class="stamp-text">Konservasi</div>
+                    @endif
                 </div>
                 <div class="text-center row d-flex justify-content-center align-items-center">
                     <div class="stamp-container d-flex justify-content-center align-items-center">
+                        @if (Auth::user()->flora_dan_fauna == 1)
                         <img src="{{ url('/frontend/images/Flora dan Fauna.svg') }}" alt="">
+                        @endif
                     </div>
+                    @if (Auth::user()->flora_dan_fauna == 1)
                     <div class="stamp-text">Flora dan Fauna</div>
+                    @endif
                 </div>
                 <div class="text-center row d-flex justify-content-center align-items-center">
                     <div class="stamp-container d-flex justify-content-center align-items-center">
+                        @if (Auth::user()->mitigasi == 1)
                         <img src="{{ url('/frontend/images/Mitigasi.svg') }}" alt="">
+                        @endif
                     </div>
+                    @if (Auth::user()->mitigasi == 1)
                     <div class="stamp-text">Mitigasi</div>
+                    @endif
                 </div>
                 <div class="text-center row d-flex justify-content-center align-items-center">
                     <div class="stamp-container d-flex justify-content-center align-items-center">
+                        @if (Auth::user()->sejarah == 1)
                         <img src="{{ url('/frontend/images/Sejarah.svg') }}" alt="">
+                        @endif
                     </div>
+                    @if (Auth::user()->sejarah == 1)
                     <div class="stamp-text">Sejarah</div>
+                    @endif
                 </div>
             </div>
         </div>

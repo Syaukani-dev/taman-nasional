@@ -29,16 +29,22 @@
                     <p class="text-center fw-bold" style="font-size: 20px;">Fauna</p>
                     <div class="d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Monyet Ekor Panjang.jpg') }}/" alt="">
-                            <p>Monyet Ekor Panjang (Macaca Fascicularis)</p>
+                            <a href=" {{ route('monyet') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Monyet Ekor Panjang.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Monyet Ekor Panjang (Macaca Fascicularis)</p>
                         </div>
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Celepuk Reban.jpg') }}" alt="">
-                            <p>Celepuk Reban (Otus Lempiji)</p>
+                            <a href="{{ route('celepuk') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Celepuk Reban.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Celepuk Reban (Otus Lempiji)</p>
                         </div>
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Elang Jawa.jpg') }}" alt="">
-                            <p>Elang Jawa (Nisaetus bartelsi)</p>
+                            <a href="{{ route('elang') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Elang Jawa.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Elang Jawa (Nisaetus bartelsi)</p>
                         </div>
                     </div>
                 </div>
@@ -46,16 +52,22 @@
                     <p class="text-center fw-bold" style="font-size: 20px;">Flora</p>
                     <div class="d-flex flex-wrap justify-content-center gap-3">
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Tesek.jpg') }}" alt="">
-                            <p>Tesek (Dodonaea viscosa)</p>
+                            <a href="{{ route('tesek') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Tesek.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Tesek (Dodonaea viscosa)</p>
                         </div>
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Puspa.jpg') }}" alt="">
-                            <p>Puspa (Schima Wallichii)</p>
+                            <a href="{{ route('puspa') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Puspa.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Puspa (Schima Wallichii)</p>
                         </div>
                         <div class="text-center">
-                            <img class="px-0 py-1" src="{{ url('/frontend/images/Pasang.jpg') }}" alt="">
-                            <p>Pasang (Lithocarpus Indutus)</p>
+                            <a href="{{ route('pasang') }}">
+                                <img class="px-0 py-1" src="{{ url('/frontend/images/Pasang.jpg') }}" alt="">
+                            </a>
+                            <p class="text-center">Pasang (Lithocarpus Indutus)</p>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'konservasi',
+        'flora_dan_fauna',
+        'mitigasi',
+        'sejarah',
     ];
 
     /**
